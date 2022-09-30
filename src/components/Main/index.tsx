@@ -1,5 +1,6 @@
 import {
   ContainerMain,
+  ContentMain,
   ContentText,
   Typography,
   WrapperImage,
@@ -12,13 +13,24 @@ export function Main() {
     <ContainerMain>
       <Typography>simple coffee</Typography>
       <WrapperMain>
-        <WrapperImage src={CupCoffee} />
-        <ContentText>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          fugiat error, ut fuga repudiandae at dolore laboriosam nesciunt
-          voluptate iure unde eveniet odit modi nobis laborum, molestias quam
-          quia aperiam.
-        </ContentText>
+        <ContentMain>
+          <WrapperImage src={CupCoffee} />
+          <ContentText>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            fugiat error, ut fuga repudiandae at dolore laboriosam nesciunt
+            voluptate iure unde eveniet odit modi nobis laborum, molestias quam
+            quia aperiam.
+          </ContentText>
+        </ContentMain>
+        <ContentMain>
+          <WrapperImage src={CupCoffee} />
+          <ContentText>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            fugiat error, ut fuga repudiandae at dolore laboriosam nesciunt
+            voluptate iure unde eveniet odit modi nobis laborum, molestias quam
+            quia aperiam.
+          </ContentText>
+        </ContentMain>
       </WrapperMain>
     </ContainerMain>
   )

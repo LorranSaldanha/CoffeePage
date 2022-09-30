@@ -14,7 +14,6 @@ export const ContainerHeader = styled.header`
 `
 export const WrapperBar = styled.div`
   width: 100%;
-  /* padding: 1rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,11 +54,12 @@ export const MainHeader = styled.div`
 `
 export const WrapperText = styled.div`
   padding: 1rem;
-  max-width: 50%;
+  width: 100%;
+  max-width: 55%;
 `
 export const Title = styled.h1`
   color: #fff;
-  font-size: 4.1rem;
+  font-size: 4.2rem;
   &::first-letter {
     text-transform: capitalize;
   }
@@ -70,7 +70,7 @@ export const DisplayText = styled.span`
 `
 export const SloganText = styled.p`
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-style: italic;
   text-transform: capitalize;
   font-weight: 500;
