@@ -32,6 +32,9 @@ export const LogoFoating = styled.h1`
   &::first-letter {
     text-transform: capitalize;
   }
+  @media screen and (min-width: 80rem) {
+    font-size: 2.5rem;
+  }
 `
 export const WrapperMenu = styled.div`
   display: flex;
@@ -44,6 +47,9 @@ export const IconMenu = styled.div`
   justify-content: center;
   align-items: center;
   color: #fff;
+  @media screen and (min-width: 80rem) {
+    font-size: 1.6rem;
+  }
 `
 export const MainHeader = styled.div`
   width: 100%;
@@ -56,12 +62,18 @@ export const WrapperText = styled.div`
   padding: 1rem;
   width: 100%;
   max-width: 55%;
+  @media screen and (min-width: 415px) {
+    max-width: 50%;
+  }
 `
 export const Title = styled.h1`
   color: #fff;
   font-size: 4.2rem;
   &::first-letter {
     text-transform: capitalize;
+  }
+  @media screen and (min-width: 80rem) {
+    /* font-size: 3.5rem; */
   }
 `
 export const DisplayText = styled.span`
@@ -91,5 +103,23 @@ export const SloganText = styled.p`
     height: 1px;
     position: realtive;
     width: 50%;
+  }
+  @media screen and (min-width: 80rem) {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    &::before,
+    &::after {
+      background-color: #fff;
+      content: '';
+      display: block;
+      margin: 1rem auto;
+      height: 1px;
+      position: realtive;
+      width: 15%;
+    }
+  }
+  @media screen and (min-width: 415px) {
+    max-width: 90%;
   }
 `

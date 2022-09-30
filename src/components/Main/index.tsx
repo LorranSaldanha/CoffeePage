@@ -1,7 +1,10 @@
 import {
   ContainerMain,
+  ButtonEmail,
   ContentMain,
   ContentText,
+  FormField,
+  InputField,
   Typography,
   WrapperImage,
   WrapperMain
@@ -32,6 +35,11 @@ export function Main() {
           </ContentText>
         </ContentMain>
       </WrapperMain>
+      <FormField>
+        <Typography>remember me</Typography>
+        <InputField placeholder="coffee@gmail.com" />
+        <ButtonEmail>send</ButtonEmail>
+      </FormField>
     </ContainerMain>
   )
 }
