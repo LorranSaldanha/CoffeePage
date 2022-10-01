@@ -1,98 +1,63 @@
 import styled from 'styled-components'
-import Coffee from '..//..//assets/Coffee.jpg'
+import CoffeeBeans from '..//..//assets/Coffee.jpg'
 
 export const ContainerHeader = styled.header`
-  background-image: url(${Coffee});
-  background-size: cover;
+  background-image: url(${CoffeeBeans});
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
+  background-position: right;
   background-attachment: fixed;
   width: 100%;
   height: 100%;
   padding: 1rem;
   position: relative;
 `
-export const WrapperBar = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`
-export const WrapperLogo = styled.div`
+export const ContentHeader = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
 `
-export const LogoFoating = styled.h1`
+export const FloatingLogo = styled.h1`
   color: #fff;
-  font-size: 5rem;
-  font-weight: 600;
+  font-size: 5.5rem;
   font-family: 'Caveat', sans-serif;
-  letter-spacing: 0.03rem;
-  &::first-letter {
-    text-transform: capitalize;
-  }
-  @media screen and (min-width: 80rem) {
-    font-size: 2.5rem;
-  }
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-transform: capitalize;
 `
-export const WrapperMenu = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-export const IconMenu = styled.div`
-  font-size: 3.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  @media screen and (min-width: 80rem) {
-    font-size: 1.6rem;
-  }
-`
-export const MainHeader = styled.div`
-  width: 100%;
+export const ContentText = styled.div`
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-`
-export const WrapperText = styled.div`
-  padding: 1rem;
   width: 100%;
-  max-width: 55%;
-  @media screen and (min-width: 415px) {
-    max-width: 50%;
-  }
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
 `
-export const Title = styled.h1`
+export const Typography = styled.h1`
+  max-width: 60%;
+  text-transform: capitalize;
+  font-size: 5rem;
+  text-align: right;
   color: #fff;
-  font-size: 4.2rem;
-  &::first-letter {
-    text-transform: capitalize;
-  }
-  @media screen and (min-width: 80rem) {
-    /* font-size: 3.5rem; */
+  @media screen and (max-width: 320px) {
+    font-size: 4rem;
   }
 `
-export const DisplayText = styled.span`
-  background-color: #401709;
-  padding: 0.5rem;
-`
-export const SloganText = styled.p`
-  color: #fff;
+export const SloganTypography = styled.p`
+  left: 50%;
+  text-align: center;
   font-size: 1.6rem;
   font-style: italic;
+  font-weight: 600;
   text-transform: capitalize;
-  font-weight: 500;
-  letter-spacing: 0.05rem;
-  width: 100%;
-  text-align: center;
   padding: 1rem;
+  color: #fff;
   position: absolute;
   top: 85%;
-  left: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
   &::before,
   &::after {
@@ -102,24 +67,6 @@ export const SloganText = styled.p`
     margin: 1rem auto;
     height: 1px;
     position: realtive;
-    width: 50%;
-  }
-  @media screen and (min-width: 80rem) {
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 0.05rem;
-    &::before,
-    &::after {
-      background-color: #fff;
-      content: '';
-      display: block;
-      margin: 1rem auto;
-      height: 1px;
-      position: realtive;
-      width: 15%;
-    }
-  }
-  @media screen and (min-width: 415px) {
-    max-width: 90%;
+    width: 40%;
   }
 `

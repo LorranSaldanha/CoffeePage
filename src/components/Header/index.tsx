@@ -1,41 +1,24 @@
 import {
   ContainerHeader,
-  DisplayText,
-  IconMenu,
-  LogoFoating,
-  MainHeader,
-  SloganText,
-  Title,
-  WrapperBar,
-  WrapperLogo,
-  WrapperMenu,
-  WrapperText
+  ContentHeader,
+  ContentText,
+  FloatingLogo,
+  SloganTypography,
+  Typography
 } from './styles'
-
-import { AiOutlineMenu } from 'react-icons/ai'
 
 export function Header() {
   return (
     <ContainerHeader>
-      <WrapperBar>
-        <WrapperLogo>
-          <LogoFoating>coffee</LogoFoating>
-        </WrapperLogo>
-        <WrapperMenu>
-          <IconMenu>
-            <AiOutlineMenu />
-          </IconMenu>
-        </WrapperMenu>
-      </WrapperBar>
-      <MainHeader>
-        <WrapperText>
-          <Title>
-            the <DisplayText>best </DisplayText>is coming
-          </Title>
-        </WrapperText>
-      </MainHeader>
-      {/* <SloganText>puring happiness...</SloganText> */}
-      <SloganText>freshly roasted coffee from grand indonesia</SloganText>
+      <ContentHeader>
+        <FloatingLogo>coffee</FloatingLogo>
+      </ContentHeader>
+      <ContentText>
+        <Typography>the best is coming</Typography>
+      </ContentText>
+      <SloganTypography>
+        freshly roasted coffee from grand indonesia
+      </SloganTypography>
     </ContainerHeader>
   )
 }
