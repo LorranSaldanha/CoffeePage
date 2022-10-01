@@ -1,72 +1,68 @@
 import styled from 'styled-components'
-import CoffeeBeans from '..//..//assets/Coffee.jpg'
+import Coffee from '..//..//assets/Coffee.jpg'
 
 export const ContainerHeader = styled.header`
-  background-image: url(${CoffeeBeans});
+  background-image: url(${Coffee});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: center;
   background-attachment: fixed;
   width: 100%;
   height: 100%;
   padding: 1rem;
   position: relative;
 `
-export const ContentHeader = styled.div`
+export const LogoFloating = styled.h1`
+  color: #fff;
+  font-weight: 600;
+  font-size: 6rem;
+  font-family: 'Caveat', sans-serif;
+  text-transform: capitalize;
   display: flex;
   justify-content: center;
   align-items: center;
+  &::before,
+  &::after {
+    content: '';
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+    display: flex;
+    vertical-align: middle;
+    margin: 1rem;
+  }
 `
-export const FloatingLogo = styled.h1`
-  color: #fff;
-  font-size: 5.5rem;
-  font-family: 'Caveat', sans-serif;
-  font-style: italic;
-  font-weight: 700;
-  letter-spacing: 0.05rem;
-  text-transform: capitalize;
-`
-export const ContentText = styled.div`
+export const WrapperText = styled.div`
+  width: 100%;
+  padding: 1rem 0.5rem;
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding: 1rem;
 `
-export const Typography = styled.h1`
+export const ContentText = styled.h1`
   max-width: 60%;
-  text-transform: capitalize;
   font-size: 5rem;
-  text-align: right;
-  color: #fff;
-  @media screen and (max-width: 320px) {
-    font-size: 4rem;
-  }
-`
-export const SloganTypography = styled.p`
-  left: 50%;
-  text-align: center;
-  font-size: 1.6rem;
-  font-style: italic;
-  font-weight: 600;
   text-transform: capitalize;
-  padding: 1rem;
   color: #fff;
-  position: absolute;
-  top: 85%;
+  text-align: left;
+`
+export const SloganFloating = styled.p`
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  text-align: left;
+`
+export const TextFooter = styled.p`
   width: 100%;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  text-align: left;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  &::before,
-  &::after {
-    background-color: #fff;
-    content: '';
-    display: block;
-    margin: 1rem auto;
-    height: 1px;
-    position: realtive;
-    width: 40%;
-  }
 `

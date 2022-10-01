@@ -1,24 +1,21 @@
 import {
   ContainerHeader,
-  ContentHeader,
   ContentText,
-  FloatingLogo,
-  SloganTypography,
-  Typography
+  LogoFloating,
+  SloganFloating,
+  TextFooter,
+  WrapperText
 } from './styles'
 
 export function Header() {
   return (
     <ContainerHeader>
-      <ContentHeader>
-        <FloatingLogo>coffee</FloatingLogo>
-      </ContentHeader>
-      <ContentText>
-        <Typography>the best is coming</Typography>
-      </ContentText>
-      <SloganTypography>
-        freshly roasted coffee from grand indonesia
-      </SloganTypography>
+      <LogoFloating>coffee</LogoFloating>
+      <WrapperText>
+        <ContentText>the best is coming</ContentText>
+        <SloganFloating>puring happiness</SloganFloating>
+      </WrapperText>
+      <TextFooter>freshly roasted coffee from grand indonesia</TextFooter>
     </ContainerHeader>
   )
 }
