@@ -25,8 +25,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    width: 100%;
     min-height: 100vh;
+    max-width: 100vw;
+    width: 100vw;
     background: var(--background);
     --webkit-font-smoothing: antialiased;
   }

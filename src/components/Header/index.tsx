@@ -1,21 +1,29 @@
+import { Hamburger } from '../Hamburger'
 import {
-  ContainerHeader,
-  ContentText,
-  LogoFloating,
-  SloganFloating,
-  TextFooter,
+  ContentHeader,
+  ContentLogo,
+  LogoBranding,
+  SloganText,
+  TipTitle,
+  WrapperHeader,
   WrapperText
 } from './styles'
 
 export function Header() {
   return (
-    <ContainerHeader>
-      <LogoFloating>coffee</LogoFloating>
+    <WrapperHeader>
+      <ContentHeader>
+        <ContentLogo>
+          <LogoBranding>coffee</LogoBranding>
+        </ContentLogo>
+        <ContentLogo>
+          <Hamburger />
+        </ContentLogo>
+      </ContentHeader>
       <WrapperText>
-        <ContentText>the best is coming</ContentText>
-        <SloganFloating>puring happiness</SloganFloating>
+        <TipTitle>puring happiness</TipTitle>
+        <SloganText>frenshly roasted coffee from grand indonesia</SloganText>
       </WrapperText>
-      <TextFooter>freshly roasted coffee from grand indonesia</TextFooter>
-    </ContainerHeader>
+    </WrapperHeader>
   )
 }

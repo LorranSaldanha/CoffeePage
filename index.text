@@ -1,0 +1,82 @@
+=============== HAMBURGER ============
+
+import styled from 'styled-components'
+
+export const HamburgerContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+  background-color: #ccc;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: ease-in 0.5s;
+  &.open {
+    transform: translate(0);
+  }
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+`
+export const ContentHamburger = styled.div`
+  width: 100%;
+`
+export const ContentNav = styled.nav`
+  padding: 10px;
+  width: 100%;
+  display: block;
+  text-align: center;
+`
+export const ListItem = styled.ul``
+export const Item = styled.li`
+  list-style: none;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  text-transform: capitalize;
+  font-weight: 600;
+`
+export const ContentButton = styled.div`
+  font-size: 4rem;
+  color: #fff;
+  position: sticky;
+  z-index: 9999;
+`
+import { useState } from 'react'
+import {
+  HamburgerContainer,
+  ContentHamburger,
+  ListItem,
+  Item,
+  ContentNav,
+  ContentButton
+} from './styles'
+
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+
+export function Hamburger() {
+  const [openMenu, setOpenMenu] = useState(false)
+  const handleOpen = () => {
+    setOpenMenu(!openMenu)
+  }
+  return (
+    <>
+      <ContentButton onClick={handleOpen}>
+        {openMenu !== true ? <AiOutlineMenu /> : <AiOutlineClose />}
+      </ContentButton>
+      <HamburgerContainer className={openMenu !== true ? '' : 'open'}>
+        <ContentHamburger>
+          <ContentNav>
+            <ListItem>
+              <Item>Nome</Item>
+              <Item>Nome</Item>
+              <Item>Nome</Item>
+            </ListItem>
+          </ContentNav>
+        </ContentHamburger>
+      </HamburgerContainer>
+    </>
+  )
+}
+
+=============== HAMBURGER ============
