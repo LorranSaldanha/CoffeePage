@@ -40,5 +40,5 @@ export const ImageCard = styled.img`
   transform: translate(-50%, -50%);
   border: solid #fff 0.6rem;
   border-radius: 100%;
-  padding: 0.02rem;
+  padding: 0.03rem;
 `
