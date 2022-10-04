@@ -44,7 +44,7 @@ export const Item = styled.li`
   font-size: 2.5rem;
 `
 export const ContentButton = styled.div`
-  font-size: 4rem;
+  font-size: 3.6rem;
   color: #fff;
   position: sticky;
   z-index: 999;

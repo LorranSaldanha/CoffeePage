@@ -82,3 +82,31 @@ export const SloganText = styled.p`
     }
   }
 `
+// export const WrapperForm = styled.form`
+//   position: relative;
+//   width: 100%;
+//   padding: 1rem;
+//   top: 60%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// `
+// export const Typography = styled.label`
+//   position: absolute;
+//   font-size: 2.5rem;
+//   top: 50%;
+//   left: 95%;
+//   transform: translate(-50%, -50%);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding-right: 2rem;
+// `
+// export const InputField = styled.input`
+//   width: 100%;
+//   padding: 1.6rem;
+//   border-radius: 1rem;
+//   /* position: relative; */
+// `
